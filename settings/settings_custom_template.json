@@ -1,0 +1,18 @@
+{
+    "_version": "1.3.0",
+    "_created": "2025-04-27",
+    "_comments": {
+        "general": "Fill out the fields below before use.",
+        "resolution": "Minimum: 50, Maximum: 1024"
+    },
+    "inner_radius": 50.0,
+    "outer_radius": 60.0,
+    "height": 200.0,
+    "wall_thickness": 0.5,
+    "resolution": 100,
+    "frequency_exponent": 0.3,
+    "output_format": "stl",
+    "validation_level": "strict",
+    "smoothing_iterations": 0,
+    "export_precision": 0.01
+}

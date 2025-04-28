@@ -1,0 +1,106 @@
+Code Quality Analysis Report
+============================
+
+Structural Smells:
+-------------------
+- High Lack of Cohesion of Methods (LCOM): Class 'metadata.MetadataCollector' has LCOM of 5 (non-cohesive: 15, cohesive: 10)
+  File: C:\nrx_cryo_project\modules\metadata.py
+  Severity: High
+
+- High Response for a Class (RFC): Class 'exporter.FieldExporter' has RFC of 42 (methods: 11, external calls: 31)
+  File: C:\nrx_cryo_project\modules\exporter.py
+  Severity: Medium
+
+- High Response for a Class (RFC): Class 'validator.FieldValidator' has RFC of 42 (methods: 8, external calls: 34)
+  File: C:\nrx_cryo_project\modules\validator.py
+  Severity: Medium
+
+- High Response for a Class (RFC): Class 'visualizer.AdvancedVisualizer' has RFC of 48 (methods: 11, external calls: 37)
+  File: C:\nrx_cryo_project\modules\visualizer.py
+  Severity: Medium
+
+- High Number of Classes (NOC): Project has 30.0 weighted classes:
+- Regular classes: 30
+- Abstract/Interface classes: 0
+- Utility classes: 0
+- Test classes: 0 (not counted in weighted total)
+Adjusted threshold: 10
+  File: C:\nrx_cryo_project\modules
+  Severity: High
+
+- Too Many Branches: Method '_validate_topology' has 5 branches with max nesting of 4
+  Line: 61
+  File: C:\nrx_cryo_project\modules\exporter.py
+  Severity: Medium
+
+- Too Many Branches: Method '_safe_chunked_export' has 4 branches with max nesting of 4
+  Line: 185
+  File: C:\nrx_cryo_project\modules\exporter.py
+  Severity: Medium
+
+- Too Many Branches: Method '__init__' has 5 branches with max nesting of 5
+  Line: 31
+  File: C:\nrx_cryo_project\modules\helical_generator.py
+  Severity: Medium
+
+- Too Many Branches: Method 'export_metadata' has 9 branches with max nesting of 6
+  Line: 104
+  File: C:\nrx_cryo_project\modules\metadata.py
+  Severity: Medium
+
+- Too Many Branches: Method '_get_gpu_info' has 8 branches with max nesting of 6
+  Line: 182
+  File: C:\nrx_cryo_project\modules\metadata.py
+  Severity: Medium
+
+- Too Many Branches: Method 'report' has 6 branches with max nesting of 4
+  Line: 164
+  File: C:\nrx_cryo_project\modules\performance_monitor.py
+  Severity: Medium
+
+- Too Many Branches: Method '_format_text_report' has 4 branches with max nesting of 4
+  Line: 181
+  File: C:\nrx_cryo_project\modules\performance_monitor.py
+  Severity: Medium
+
+- Too Many Branches: Method 'update_settings' has 7 branches with max nesting of 5
+  Line: 103
+  File: C:\nrx_cryo_project\modules\settings_manager.py
+  Severity: Medium
+
+- Too Many Branches: Method 'check_wall_thickness' has 6 branches with max nesting of 4
+  Line: 180
+  File: C:\nrx_cryo_project\modules\validator.py
+  Severity: Medium
+
+- Too Many Branches: Method 'check_pipe_spacing' has 5 branches with max nesting of 4
+  Line: 236
+  File: C:\nrx_cryo_project\modules\validator.py
+  Severity: Medium
+
+- Too Many Branches: Method 'generate_validation_report' has 5 branches with max nesting of 5
+  Line: 282
+  File: C:\nrx_cryo_project\modules\validator.py
+  Severity: Medium
+
+Code Smells:
+------------
+- Temporary Field: Potentially unused fields x, y, field, self, z in class 'FieldExporter' at line 19 in C:\nrx_cryo_project\modules\exporter.py
+- Temporary Field: Potentially unused fields pipes_per_ring, radial_spacing, self, num_rings in class 'HelicalFieldGenerator' at line 15 in C:\nrx_cryo_project\modules\helical_generator.py
+- Temporary Field: Potentially unused fields existing_logger, log_level, backup_count, encryption_key, enable_colors, console_output, self, size_unit, secure_mode, output_format, max_log_size in class 'LoggerSystem' at line 90 in C:\nrx_cryo_project\modules\logger_system.py
+- Long Method: 'main' has 118 lines in C:\nrx_cryo_project\modules\main.py at line 53
+- Temporary Field: Potentially unused fields x, y, self, z in class 'FieldValidator' at line 30 in C:\nrx_cryo_project\modules\validator.py
+
+Architectural Smells:
+---------------------
+- Potential Improper API Usage: Module 'modules.main' has repetitive API calls: setLevel(3x), add_argument(14x), get(7x), info(6x), critical(8x), exit(8x)
+- Unstable Dependency: Module 'modules.exporter' has high instability (1.00) with 7 outgoing and 0 incoming dependencies
+- Unstable Dependency: Module 'modules.main' has high instability (1.00) with 6 outgoing and 0 incoming dependencies
+- Unstable Dependency: Module 'modules.performance_monitor' has high instability (1.00) with 8 outgoing and 0 incoming dependencies
+- Unstable Dependency: Module 'modules.visualizer' has high instability (1.00) with 11 outgoing and 0 incoming dependencies
+
+Summary:
+--------
+Total Structural Smells: 16
+Total Code Smells: 5
+Total Architectural Smells: 5

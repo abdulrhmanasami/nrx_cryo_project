@@ -1,0 +1,14 @@
+# Changelog - Settings Manager
+
+## [1.3.0] - 2025-04-27
+### Added
+- Introduced _comments fields for parameter documentation.
+- Added `export_precision` field for better control.
+
+### Changed
+- Updated test resolution to 100 (minimum safe value).
+- Standardized JSON formatting across all files.
+- Reduced validation smoothing iterations to 2 for performance.
+
+### Fixed
+- Corrected validation edge cases for wall thickness.

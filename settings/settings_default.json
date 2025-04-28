@@ -1,0 +1,26 @@
+{
+    "_version": "1.3.0",
+    "_created": "2025-04-27",
+    "_comments": {
+        "inner_radius": "Inner radius of the structure (mm)",
+        "outer_radius": "Outer radius of the structure (mm)",
+        "height": "Height along Z axis (mm)",
+        "wall_thickness": "Wall thickness of gyroid (mm)",
+        "resolution": "Grid resolution (50–1024)",
+        "frequency_exponent": "Radial grading exponent",
+        "output_format": "Export format (stl/vtu/3mf)",
+        "validation_level": "strict / relaxed",
+        "smoothing_iterations": "Surface smoothing iterations",
+        "export_precision": "Precision in mm for mesh export (VTU/3MF only)"
+    },
+    "inner_radius": 77.03,
+    "outer_radius": 84.14,
+    "height": 300.0,
+    "wall_thickness": 0.3,
+    "resolution": 256,
+    "frequency_exponent": 0.3,
+    "output_format": "stl",
+    "validation_level": "strict",
+    "smoothing_iterations": 0,
+    "export_precision": 0.01
+}
