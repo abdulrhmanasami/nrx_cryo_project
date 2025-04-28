@@ -11,7 +11,7 @@
     "height": 300.0,
     "wall_thickness": 0.5,
     "resolution": 100,
-    "frequency_exponent": 0.3,co_speechnotes_plugin_fab_id:1642,107
+    "frequency_exponent": 0.3,
     "output_format": "stl",
     "validation_level": "strict",
     "smoothing_iterations": 0,
